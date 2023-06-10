@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+        <title>OpenLibrary</title>
+        <link rel = "stylesheet" href = "index.css">
+        <script defer src = "index.js"></script>
+        <link rel = "icon" href = "Images/SiteIcon.png">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div style = "display: none;" class = "Popup">
+            <div class = "PopupContent">
+                <span class = "PopupText">
+                    Add a new book!
+                </span>
+                <input class = "PopupInput" type = "text" placeholder = "Title">
+                <input class = "PopupInput" type = "text" placeholder = "Author">
+                <input class = "PopupInput" type = "number" min = "0" placeholder = "Pages">
+                <input class = "PopupSubmit" type = "submit">
+            </div>
+        </div>
+        <div class = "Header">
+            <div class = "HeaderContent">
+                <img class = "HeaderLogo" src = "Images/SiteLogoTr.png" height="75%">
+            </div>
+        </div>
+        <div class = "Main">
+            <div class = "AddBook">
+                <button class = "AddBookButton">
+                    + Add Book
+                </button>
+            </div>
+            <div class = "BookDisplay">
+                <div class = "BookGrid">
+                    <div style = "display: none;" class = "GridItem">
+                        <div class = "GridFlex">
+                            <span class = "ItemTitle">"I,Freddy"</span>
+                            <span class = "ItemAuthor">Dietlof Reiche</span>
+                            <span class = "ItemPages">208 pages</span>
+                            <div class = "ItemSlider">
+                                <div class = "Slider">
+                                    <input class = "SliderItem" type = "range" min = "0" max = "208" value = "208">
+                                </div>
+                                <div class = "SliderDisplay">
+                                    <span class = "SliderPercent">208/208 (100%)</span>
+                                    <div class = "SliderMeat">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "ItemSides">
+                            <button class = "ItemRemove">
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "Footer">
+            
+        </div>
+    </body>
+
+</html>
