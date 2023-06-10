@@ -68,8 +68,9 @@ function loadBooks(){
 
         Slider.addEventListener("input",function(){
             Bookz[i].currentpage = Slider.value;
+            localStorage.setItem("Books",JSON.stringify(Bookz));
             SliderPercent.textContent = (Bookz[i].currentpage + "/" + Bookz[i].pages);
-            SliderMeat.style = ("width: " + (Bookz[i].currentpage / Bookz[i].pages) * 100 + "%;")
+            SliderMeat.style = ("width: " + (Bookz[i].currentpage / Bookz[i].pages) * 100 + "%;");
         })
 
         removeBook.onclick = function(){
